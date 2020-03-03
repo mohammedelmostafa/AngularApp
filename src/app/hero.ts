@@ -1,5 +1,5 @@
 // this is interface for hero (object to use it in component)
-export interface hero{
+export interface Hero{
     id: number;
     name: string;
 }

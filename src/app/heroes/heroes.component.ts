@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { hero } from '../hero';
+ import { Hero } from '../hero';
 import {HEROES} from '../mok-heroes';
 
 @Component({
@@ -9,16 +9,16 @@ import {HEROES} from '../mok-heroes';
 })
 export class HeroesComponent implements OnInit {
 // call interface and assigned value
-  hero: hero ={
+  hero: Hero ={
     id:1,
     name:"Windstorm"
   };
 
   heroes=HEROES;
 
-  selectedhero: hero;
+  selectedhero: Hero;
   
-  onSelect(hero:hero): void {
+  onSelect(hero:Hero): void {
    this.selectedhero=hero;
   }
   
